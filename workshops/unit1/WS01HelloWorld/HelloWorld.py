@@ -8,4 +8,6 @@ print("Hello World from Monserrat Cordova \n ESPE \n GEO")
  sum = float (addend2) + float(addend) 
  
  #displaying the sum 
- print("The sum 
+ print("The sum of (0) and (1) is (2)".format (addend1, addend2, sum)) 
+ 
+ print("the sum is %. If"% ( float(input( "Enter first number: "))+float(input("Enter second number: "))))
