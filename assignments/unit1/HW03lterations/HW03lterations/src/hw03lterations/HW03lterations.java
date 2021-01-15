@@ -17,7 +17,6 @@ public class HW03lterations {
             System.out.println( "The number is --> " + (number) );
             number++;
     }      
-   
     System.out.println("Multiplication Tables : 16");
         int top=12;
         int product=0;
