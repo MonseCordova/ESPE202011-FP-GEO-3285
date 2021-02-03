@@ -1,4 +1,4 @@
-package ws010functions;
+=package ws010functions;
 
 /**
  *
