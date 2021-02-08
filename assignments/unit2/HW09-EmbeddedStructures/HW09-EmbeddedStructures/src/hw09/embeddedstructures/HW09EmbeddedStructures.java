@@ -35,42 +35,26 @@ public class HW09EmbeddedStructures {
             System.out.println("Enter 0 (zero) to exit ");
 
             if (opperator_1 % 2 == 0 && opperator_2 % 2 == 0) {
-                product = opperator_1 * opperator_2;
-                System.out.println("The multiplication of " + opperator_1 + " * "
-                        + opperator_2 + " is equal to --> " + product);
+                MultipliTwoNumbers(opperator_1, opperator_2);
             } else {
                 if (opperator_1 % 3 == 0 && opperator_2 % 3 == 0) {
-                    sum = opperator_1 + opperator_2;
-                    System.out.println("The addition of " + opperator_1 + " + "
-                            + opperator_2 + " is equal to --> " + sum);
+                    AddingTwoNumbers(opperator_1, opperator_2);
 
                 } else {
                     if (opperator_1 % 7 == 0 && opperator_2 % 7 == 0) {
-                        module = opperator_1 % opperator_2;
-                        System.out.println("The division of " + opperator_1 + " % "
-                                + opperator_2 + " is equal to --> " + module);
+                        DivideTwoNumbersModule(opperator_1, opperator_2);
 
                     } else {
                         if (opperator_1 % 11 == 0 && opperator_2 % 11 == 0) {
-                            for (i = 1; i <= stop; i++) {
-                                product = i * opperator_1;
-                                System.out.println(i + " * " + opperator_1 + " = "
-                                        + product);
-                            }
+                            ShowMultiplicanTable(i, stop, opperator_1);
 
                             System.out.println("========================");
 
-                            for (j = 1; j <= stop; j++) {
-                                product = j * opperator_2;
-                                System.out.println(j + " * " + opperator_2 + " = "
-                                        + product);
-                            }
+                            ShowMultiplicanTable(j, stop, opperator_2);
 
                         } else {
                             if (opperator_1 % 13 == 0 && opperator_2 % 13 == 0) {
-                                division = opperator_1 / opperator_2;
-                                System.out.println("The division of " + opperator_1 + " / "
-                                        + opperator_2 + " is equal to --> " + division);
+                                DivideTwoNumbers(opperator_1, opperator_2);
 
                             } else {
                                 System.out.println("Invalid option, try again please");
@@ -83,6 +67,43 @@ public class HW09EmbeddedStructures {
             }
         } while (opperator_1 != 0 && opperator_2 != 0);
         System.out.println("See you later");
+    }
+
+    public static void DivideTwoNumbers(int opperator_1, int opperator_2) {
+        float division;
+        division = opperator_1 / opperator_2;
+        System.out.println("The division of " + opperator_1 + " / "
+                + opperator_2 + " is equal to --> " + division);
+    }
+
+    public static void ShowMultiplicanTable(int i, int stop, int opperator_1) {
+        int product;
+        for (i = 1; i <= stop; i++) {
+            product = i * opperator_1;
+            System.out.println(i + " * " + opperator_1 + " = "
+                    + product);
+        }
+    }
+
+    public static void DivideTwoNumbersModule(int opperator_1, int opperator_2) {
+        int module;
+        module = opperator_1 % opperator_2;
+        System.out.println("The division of " + opperator_1 + " % "
+                + opperator_2 + " is equal to --> " + module);
+    }
+
+    public static void AddingTwoNumbers(int opperator_1, int opperator_2) {
+        int sum;
+        sum = opperator_1 + opperator_2;
+        System.out.println("The addition of " + opperator_1 + " + "
+                + opperator_2 + " is equal to --> " + sum);
+    }
+
+    public static void MultipliTwoNumbers(int opperator_1, int opperator_2) {
+        int product;
+        product = opperator_1 * opperator_2;
+        System.out.println("The multiplication of " + opperator_1 + " * "
+                + opperator_2 + " is equal to --> " + product);
     }
 }
 
