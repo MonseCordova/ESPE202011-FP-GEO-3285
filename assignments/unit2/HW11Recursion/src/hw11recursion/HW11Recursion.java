@@ -1,7 +1,5 @@
 package hw11recursion;
 
-import java.util.Scanner;
-
 /**
  *
  * @author MonseCordova
@@ -9,22 +7,22 @@ import java.util.Scanner;
 public class HW11Recursion {
 
     public static void main(String[] args) {
-        countBack();
-    
-    }
 
-    public static void countBack() {
-        int n = 1;
-        int end;
-        System.out.println("Enter a number to start ");
-        Scanner input = new Scanner(System.in);
-        end = input.nextInt();
-           
-        for (n = end; n >= 1; n--) {
-            System.out.println("Te count back from " + n + " to one " + " is equal to --> ");
-            System.out.println(n);
+        int rowsNumber = 10;
+        int[] a = new int[1];
+        
+        for (int n = 1; n <= rowsNumber; n++) {
+            int[] x = new int[n];
+            for (int m = 0; m < n; m++) {
+                if (m == 0 || m == (n - 1)) {
+                    x[m] = 1;
+                } else {
+                    x[m] = a[m] + a[m - 1];
+                }
+                System.out.print(x[m] + " ");
+            }
+            a = x;
+            System.out.println();
         }
     }
-    
 }
-
