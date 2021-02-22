@@ -15,29 +15,27 @@ import static jdk.nashorn.tools.ShellFunctions.input;
  */
 public class Quiz22022021 {
     private static String numbers;
+    private static String name;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     Scanner entrada = new Scanner(System.in);
-        int clients = 0 ; 
+     Scanner input = new Scanner(System.in);
+        int costumer = 0 ; 
         int age;
-        int number;
-        
-        String name;
-        name = input.nextline;
-        System.out.println("Enter the Number of clients ");
-         numbers = entrada.nextLine();
-        for (int i= 1;i<=clients;i++)
+        int number;   
+        String nombres; 
+        System.out.print("Enter the number of costumer ");
+        costumer = input.nextInt(); 
+        for (int i=0;i<costumer;i++)
         {
-            System.out.println("Enter the Number of clients");
-             name = input.nextline;
-            name = entrada.nextLine();
-            
-            System.out.println("Enter the ages of clients ");
-           age = entrada.nextInt();
-           System.out.println("the clients : "+name+" have "+age+" ages");
+           input.nextLine();
+            System.out.print("Enter the name of the costumer");
+            nombres = input.nextLine();
+            System.out.print("Enter the costumer age ");
+           age = input.nextInt();
+           System.out.println(" ages"+"the costumer : "+name+" have "+age);
         }
     }
 }
