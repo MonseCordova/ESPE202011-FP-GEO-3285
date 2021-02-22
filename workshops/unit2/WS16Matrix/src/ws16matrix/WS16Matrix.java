@@ -1,17 +1,17 @@
 
-package ws16;
+package ws16matrix;
 
 /**
  *
  * @author LENOVO
  */
-public class WS16 {
+public class WS16Matrix {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    int a[][] = {{5, 7, 9}, {9, 5, 8}, {3, 2, 4}};
+   int a[][] = {{5, 7, 9}, {9, 5, 8}, {3, 2, 4}};
         int b[][] = {{8, 3, 5}, {-5, 4, -3}, {9, 10, 24}};
 
         //    5    7     9           8     3     5       13    10    14
