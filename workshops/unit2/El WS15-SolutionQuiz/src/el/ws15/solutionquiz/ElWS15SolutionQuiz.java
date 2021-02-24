@@ -1,6 +1,8 @@
 
 package el.ws15.solutionquiz;
 
+import java.util.Scanner;
+
 /**
  *
  * @author LENOVO
