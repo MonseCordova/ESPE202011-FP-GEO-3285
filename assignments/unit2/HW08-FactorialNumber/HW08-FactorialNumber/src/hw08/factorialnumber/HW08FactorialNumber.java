@@ -17,6 +17,7 @@ public class HW08FactorialNumber {
        int option;
         
        do{
+            System.out.println("==== AUTOR CORDOVA MONSERRAT ^^======");
            System.out.println("==== FACTORIAL======");
            System.out.println("1. -> Factorial");
            System.out.println("0. -> Exit");
