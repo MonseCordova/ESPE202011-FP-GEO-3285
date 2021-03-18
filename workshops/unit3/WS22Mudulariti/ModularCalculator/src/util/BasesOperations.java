@@ -6,9 +6,9 @@ package util;
  * @author LENOVO
  */
 public class BasesOperations {
-   public static float addTwoNumbers(float element1, float element2){
+   public static float addTwoNumbers(float element1, float number2){
         float result = 0.0F;
-        result = element1 + element2;
+        result = element1 + number2;
         return result;
     }
     
